@@ -1,6 +1,6 @@
-import React from 'react'
+import React     from 'react'
 import { Route } from 'react-router-dom'
 
-const App = () => {return <div></div>}
+const App = () => <div>react app</div>
 
 export default App
