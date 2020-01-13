@@ -1,9 +1,28 @@
 
+h1 {
+    font-size: 153%;
+}
+
+h4 {
+    font-size: 100%;
+}
+
 .hdr {
     width: 320px;
     height: 320px;
-    border: 1px solid red;
     overflow: hidden;
+    font-family: 'Space Mono', monospace;
+}
+
+.hdr-btn {
+    border: 1px solid RGB(50,54,58);
+    border-radius: 1px;
+    background-color: RGB(39,43,46);
+    margin-right: 10%;
+    height: 29px;
+    font-size: 80%;
+    margin-top: 3px;
+    text-align: center;
 }
 
 .bdy {
@@ -18,47 +37,54 @@
     border: 1px solid blue;
 }
 
+.flt-rgt {
+    float: right;
+}
+
 .bg-drkgry {
-    background-color: darkgray;
+    background-color: RGB(33,37,40);
+}
+
+.off-wht {
+    color: RGB(221, 238, 247);
 }
 
 .wht {
-    color: white;
+    color: RGB(255, 255, 255);
 }
-
 .gry {
-    color: grey;
+    color: RGB(104, 118, 127);
 }
 
 .neon {
-    color: turquoise;
+    color: RGB(80, 251, 156);
 }
+
 
 .intro-cntnr {
     padding-left: 14px;
     margin-top: 8px;
     height: 100%;
-    font-family: 'Space Mono', monospace;
 }
 
 .intro-cntnr .intro-cntnr {
-    border-left: 1px solid red;
+    border-left: 1px solid RGB(63, 69, 73);;
 }
 
 .intro-cntnr .intro-cntnr .intro-cntnr {
-    border-color: yellow;
+    
 }
 
 .intro-cntnr .intro-cntnr .intro-cntnr .intro-cntnr {
-    border-color: blue;
+    
 }
 
 .intro-cntnr .intro-cntnr .intro-cntnr .intro-cntnr .intro-cntnr {
-    border-color: pink;
+    
 }
 
 .intro-cntnr .intro-cntnr .intro-cntnr .intro-cntnr .intro-cntnr .intro-cntnr {
-    border-color: purple;
+   
 }
 
 .intro-lst {
@@ -67,6 +93,9 @@
 }
 
 .intro-lst-itm {
-    display: inline-block; 
+    background-color: RGB(38, 43, 46);
+    font-size: 68%;
+    padding: 7px 10px 10px 7px;
+    border-radius: 2px;
 }
 
