@@ -1,7 +1,72 @@
-.App {
-    width: 100%;
-    height: 200px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+
+.hdr {
+    width: 320px;
+    height: 320px;
+    border: 1px solid red;
+    overflow: hidden;
 }
+
+.bdy {
+    width: 320px;
+    height: 320px;
+    border: 1px solid purple;
+}
+
+.ftr {
+    width: 320px;
+    height: 320px;
+    border: 1px solid blue;
+}
+
+.bg-drkgry {
+    background-color: darkgray;
+}
+
+.wht {
+    color: white;
+}
+
+.gry {
+    color: grey;
+}
+
+.neon {
+    color: turquoise;
+}
+
+.intro-cntnr {
+    padding-left: 14px;
+    margin-top: 8px;
+    height: 100%;
+    font-family: 'Space Mono', monospace;
+}
+
+.intro-cntnr .intro-cntnr {
+    border-left: 1px solid red;
+}
+
+.intro-cntnr .intro-cntnr .intro-cntnr {
+    border-color: yellow;
+}
+
+.intro-cntnr .intro-cntnr .intro-cntnr .intro-cntnr {
+    border-color: blue;
+}
+
+.intro-cntnr .intro-cntnr .intro-cntnr .intro-cntnr .intro-cntnr {
+    border-color: pink;
+}
+
+.intro-cntnr .intro-cntnr .intro-cntnr .intro-cntnr .intro-cntnr .intro-cntnr {
+    border-color: purple;
+}
+
+.intro-lst {
+    display: flex;
+    justify-content: space-around;
+}
+
+.intro-lst-itm {
+    display: inline-block; 
+}
+
