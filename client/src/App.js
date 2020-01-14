@@ -5,7 +5,7 @@ import './styles/App.css'
 
 const App = () => <React.Fragment>
                     <div className="hdr bg-drkgry">
-                        <button className="hdr-btn flt-rgt wht hdn anime-visible delay-animation-11">Hire Me</button>
+                        <button className="hdr-btn flt-rgt orng hdn anime-visible delay-animation-11">Hire Me</button>
                         <div className="intro-cntnr">
                             <h4 className="intro-msg off-wht hdn anime-visible delay-animation-1">
                                 hi! I am...

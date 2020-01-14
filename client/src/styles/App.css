@@ -23,8 +23,16 @@ h4 {
     font-size: 80%;
     margin-top: 3px;
     text-align: center;
+    z-index: 1;
 }
 
+.hdr-btn:active{
+    color: white;
+}
+
+.orng {
+    color: RGB(227,186,17);
+}
 .bdy {
     width: 320px;
     height: 320px;
@@ -137,4 +145,8 @@ h4 {
     font-size: 68%;
     padding: 7px 10px 10px 7px;
     border-radius: 2px;
+}
+
+.intro-msg {
+    display: inline;
 }
