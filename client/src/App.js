@@ -38,7 +38,7 @@ const App = () => <div className="app">
                                                 website should represent the best product 
                                                 possible. And I am the man for the job.
                                             </h4>
-                                            <div className="intro-cntnr hdn anime-visible delay-animation-9"/>
+                                            <div className="intro-cntnr js-lst-intr-cntnr hdn anime-visible delay-animation-9"/>
                                         </div>
                                     </div>
                                 </div>
@@ -46,7 +46,8 @@ const App = () => <div className="app">
                         </div>
                     </div>
                     <div className="bdy">
-
+                        <div className="prjs-cntnr">
+                        </div>
                     </div>
                     <div className="ftr">
 
@@ -54,3 +55,9 @@ const App = () => <div className="app">
                 </div>
 
 export default App
+
+/*
+    TODO: document.findByClassName("js-lst-intr-cntnr")
+    https://medium.com/@chung.andrew7/finding-the-absolute-positions-of-react-components-fda1c5bc9ab
+    check out ^ if not able to hook into react
+*/

@@ -43,9 +43,20 @@ h4 {
 }
 
 .bdy {
-    width: 320px;
+    width: 100%;
     height: 320px;
-    border: 1px solid purple;
+    --widthTotalWindow: 100%;
+    --afterFirstIndent: calc(var(--widthTotalWindow) * 0.04);
+    --afterSecondIndent: calc(var(--afterFirstIndent) + (var(--widthTotalWindow) - var(--afterFirstIndent)) * 0.04);
+    --afterThirdIndent: calc(var(--afterSecondIndent) + (var(--widthTotalWindow) - var(--afterSecondIndent)) * 0.04);
+    --afterFourthIndent: calc(var(--afterThirdIndent) - var(--afterThirdIndent) * 0.04);
+    --afterFifthIndent: calc(var(--afterFourthIndent) - var(--afterFourthIndent) * 0.04);
+    padding-left: var(--afterThirdIndent);
+}
+
+.prjs-cntnr {
+    height: 320px;
+    border-left: 1px solid RGB(104, 118, 127);
 }
 
 .ftr {
@@ -133,6 +144,7 @@ h4 {
 .intro-cntnr {
     padding-left: 4%;
     margin-top: 1.9%;
+    min-height: 0;
     height: 100%;
 }
 
