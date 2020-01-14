@@ -3,9 +3,9 @@ import { Route } from 'react-router-dom'
 import './styles/Reset.css'
 import './styles/App.css'
 
-const App = () => <React.Fragment>
+const App = () => <div className="app">
                     <div className="hdr bg-drkgry">
-                        <button className="hdr-btn flt-rgt orng hdn anime-visible delay-animation-11">Hire Me</button>
+                        <button className="hdr-btn flt-rgt orng hdn anime-visible delay-animation-10">Hire Me</button>
                         <div className="intro-cntnr">
                             <h4 className="intro-msg off-wht hdn anime-visible delay-animation-1">
                                 hi! I am...
@@ -38,7 +38,7 @@ const App = () => <React.Fragment>
                                                 website should represent the best product 
                                                 possible. And I am the man for the job.
                                             </h4>
-                                            <div className="intro-cntnr hdn anime-visible delay-animation-10"/>
+                                            <div className="intro-cntnr hdn anime-visible delay-animation-9"/>
                                         </div>
                                     </div>
                                 </div>
@@ -51,23 +51,6 @@ const App = () => <React.Fragment>
                     <div className="ftr">
 
                     </div>
-                </React.Fragment>
+                </div>
 
 export default App
-/*
-<div className="intro-cntnr">
-    <span className="intro-msg wht"></span>
-    <div className="intro-cntnr">
-        <span className="intro-msg big wht"></span>
-        <div className="intro-cntnr">
-            <span className="intro-msg gry">
-                <span className="neon"></span>
-            </span>
-            <div className="intro-cntnr">
-                <div className="intro-cntnr">
-                    <span className="intro-msg gry"></span>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>*/
