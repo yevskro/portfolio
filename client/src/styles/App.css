@@ -16,7 +16,7 @@ h4 {
 
 .hdr-btn {
     border: 1px solid RGB(50,54,58);
-    border-radius: 1px;
+    border-radius: 2px;
     background-color: RGB(39,43,46);
     margin-right: 10%;
     height: 29px;
@@ -60,6 +60,62 @@ h4 {
     color: RGB(80, 251, 156);
 }
 
+@keyframes becomeVisible {
+    0%      { opacity: 0; }
+    100%    { opacity: 1; }
+}
+
+.hdn {
+    opacity: 0;
+}
+
+.anime-visible {
+    animation: 0.5s ease-in 0s 1 becomeVisible forwards;
+}
+
+.delay-animation-1 {
+    animation-delay: 0.5s;
+}
+
+.delay-animation-2 {
+    animation-delay: 1s;
+}
+
+.delay-animation-3 {
+    animation-delay: 1.5s;
+}
+
+.delay-animation-4 {
+    animation-delay: 2s;
+}
+
+.delay-animation-5 {
+    animation-delay: 2.25s;
+}
+
+.delay-animation-6 {
+    animation-delay: 2.50s;
+}
+
+.delay-animation-7 {
+    animation-delay: 2.75s;
+}
+
+.delay-animation-8 {
+    animation-delay: 3s;
+}
+
+.delay-animation-9 {
+    animation-delay: 3.25s;
+}
+
+.delay-animation-10 {
+    animation-delay: 3.75s;
+}
+
+.delay-animation-11 {
+    animation-delay: 4.25s;
+}
 
 .intro-cntnr {
     padding-left: 14px;
@@ -68,23 +124,7 @@ h4 {
 }
 
 .intro-cntnr .intro-cntnr {
-    border-left: 1px solid RGB(63, 69, 73);;
-}
-
-.intro-cntnr .intro-cntnr .intro-cntnr {
-    
-}
-
-.intro-cntnr .intro-cntnr .intro-cntnr .intro-cntnr {
-    
-}
-
-.intro-cntnr .intro-cntnr .intro-cntnr .intro-cntnr .intro-cntnr {
-    
-}
-
-.intro-cntnr .intro-cntnr .intro-cntnr .intro-cntnr .intro-cntnr .intro-cntnr {
-   
+    border-left: 1px solid RGB(63, 69, 73);
 }
 
 .intro-lst {
@@ -98,4 +138,3 @@ h4 {
     padding: 7px 10px 10px 7px;
     border-radius: 2px;
 }
-
