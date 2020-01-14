@@ -2,11 +2,12 @@
 .app {
     font-size: 1rem;
 }
-h1 {
+
+.f-size-lg {
     font-size: 1.32em;
 }
 
-h4 {
+.f-size-md {
     font-size: 1.05em;
 }
 
