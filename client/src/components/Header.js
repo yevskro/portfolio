@@ -4,18 +4,18 @@ const HeaderButton = (props) => <button className="hdr-btn flt-rgt orng hdn anim
 const Highlight = (props)=> <span className="neon">&nbsp;{props.text}&nbsp;</span>
 const IntroContainer = (props) => {
     const animateClasses = props.index > 0 ? `hdn anime-visible delay-animation-${props.msg.props.delay - 1}` : ""
-    return <div className={`intro-cntnr ${animateClasses}`}>{props.msg}{props.children}</div>
+    return <div className={`intro-cntnr ${animateClasses}`} onAnimationStart={props.onAnimationStart}>{props.msg}{props.children}</div>
 }
 const IntroMessage = (props) => {
     return <span className={`intro-msg ${props.color} ${props.size} hdn anime-visible delay-animation-${props.delay}`}>{props.children}</span>
 }
-const generateIntroContainerFromMsgs = (msgs) => {
+const generateIntroContainerFromMsgs = (msgs, onAnimationStart) => {
     const generate = (index) => {
         if(index === msgs.length){
             return
         }
 
-        return <IntroContainer index={index} msg={msgs[index]}>
+        return <IntroContainer index={index} msg={msgs[index]} onAnimationStart={onAnimationStart}>
                     {generate(index + 1)}
                 </IntroContainer>
     }
@@ -25,6 +25,13 @@ const generateIntroContainerFromMsgs = (msgs) => {
 
 const IntroList = (props) => <ul className="intro-lst">{props.children}</ul>
 const IntroItem = (props) => <li className={`intro-lst-itm ${props.color} hdn anime-visible delay-animation-${props.delay}`}>{props.text}</li>
+const onAnimationStart = (e) => {
+    e.stopPropagation()
+    const className = e.target.className
+    if(className.includes("delay-animation-8") && className.includes("intro-cntnr")){
+        console.log(e.target.offsetLeft)
+    }
+}
 
 const Header = () => {
     const msgs = [
@@ -57,7 +64,7 @@ const Header = () => {
 
     return <div className="hdr bg-drkgry">
                 <HeaderButton title="Hire Me" delay={10} color="orng"/>
-                {generateIntroContainerFromMsgs(msgs)}
+                {generateIntroContainerFromMsgs(msgs, onAnimationStart)}
             </div>
 }
 
