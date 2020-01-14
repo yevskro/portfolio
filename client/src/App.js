@@ -1,20 +1,33 @@
-import React     from 'react'
+import React, { Component }     from 'react'
 import { Route } from 'react-router-dom'
 import Header    from './components/Header'
 
 import './styles/Reset.css'
 import './styles/App.css'
 
-const App = () => <div className="app">
-                    <Header/>
+class App extends Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            indentWidth: 0
+        }
+    }
+
+    onGotResponsiveIndentWidth = (width) => {
+        this.setState({indentWidth: width})
+    }
+
+    render(){
+        return <div className="app">
+                    <Header onGotResponsiveIndentWidth={this.onGotResponsiveIndentWidth}/>
                     <div className="bdy">
-                        <div className="prjs-cntnr">
+                        <div className="indent hdn anime-visible delay-animation-8" style={{width: this.state.indentWidth}}>
+
                         </div>
                     </div>
-                    <div className="ftr">
-
-                    </div>
                 </div>
+    }
+}
 
 export default App
 
