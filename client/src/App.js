@@ -21,8 +21,24 @@ class App extends Component {
         return <div className="app">
                     <Header onGotResponsiveIndentWidth={this.onGotResponsiveIndentWidth}/>
                     <div className="bdy">
-                        <div className="indent hdn anime-visible delay-animation-8" style={{width: this.state.indentWidth}}>
-
+                        <div className="indent" style={{width: this.state.indentWidth}}/>
+                        <div className="prjs-cntnr hdn anime-visible delay-animation-8">
+                            <div className="prj">
+                                <div className="prj-hdr f-size-lg">www.yevdev.io</div>
+                                <p className="prj-txt">fdsfkdsfksdjfsjdfsdjfksdjfksdjfksdjfsdjfkdsjkfkfjskdjf</p>
+                                <div className="prj-wnd">
+                                    <div className="prj-bar">
+                                        <span className="prj-circle bg-red"></span><span className="prj-circle bg-orange"></span><span className="prj-circle bg-green"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="prj">
+                                <div className="prj-hdr f-size-lg">hangroulette.dev</div>
+                                <p className="prj-txt">fdsfkdsfksdjfsjdfsdjfksdjfksdjfksdjfsdjfkdsjkfkfjskdjf</p>
+                                <div className="prj-wnd">
+                                    <div className="prj-bar"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

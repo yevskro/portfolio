@@ -42,6 +42,7 @@ class Header extends Component{
         const e = document.getElementsByClassName("intro-cntnr delay-animation-8")
         window.addEventListener("resize", () => {
             this.props.onGotResponsiveIndentWidth(e[0].offsetLeft)
+            console.log(e[0].offsetLeft)
         })
     }
 

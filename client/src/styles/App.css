@@ -1,6 +1,7 @@
 
 .app {
     font-size: 1rem;
+    font-family: 'Space Mono', monospace;
 }
 
 .f-size-lg {
@@ -12,10 +13,9 @@
 }
 
 .hdr {
-    width: 100%;
+    width: 320px;
     height: 320px;
     overflow: hidden;
-    font-family: 'Space Mono', monospace;
 }
 
 .hdr-btn {
@@ -41,16 +41,6 @@
 
 .orng {
     color: RGB(227,186,17);
-}
-
-.bdy {
-    width: 100%;
-    height: 320px;
-}
-
-.prjs-cntnr {
-    height: 320px;
-    border-left: 1px solid RGB(104, 118, 127);
 }
 
 .ftr {
@@ -163,7 +153,70 @@
 }
 
 /********* BODY ************/
-.indent {
-    height: 640px;
-    border-right: 1px solid RGB(227, 231, 235);
+.bdy {
+    width: 100%;
+    display: flex;
+}
+
+.prjs-cntnr {
+    border-left: 1px solid RGB(227, 231, 235);
+}
+
+.prj {
+    width: 268px;
+    height: 400px;
+    box-sizing: border-box;
+    padding: 11% 5% 11% 5%;
+}
+
+.prj-wnd {
+    border: 1px solid red;
+    height: 60%;
+    width: 100%;
+    border-color: RGB(214,214,214);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.33;
+}
+
+.prj-bar {
+    background-color: RGB(214,214,214);
+    height: 10%;
+    padding-left: 3%;
+}
+
+.prj-img {
+
+}
+
+.prj-hdr {
+    color: RGB(33,37,40);
+    margin-bottom: 8%;
+}
+
+.prj-txt {
+    /*word-break: break-all;*/
+    overflow-wrap: break-word;
+    font-family: 'Source Code Pro', monospace;
+    color: RGB(123,138,148);
+    margin-bottom: 8%;
+}
+
+.prj-circle {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 3%;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-orange {
+    background-color: orange;
 }
