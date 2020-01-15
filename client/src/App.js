@@ -22,8 +22,8 @@ class App extends Component {
                     <Header onGotResponsiveIndentWidth={this.onGotResponsiveIndentWidth}/>
                     <div className="bdy">
                         <div className="prjs-cntnr hdn anime-visible delay-animation-8" style={{"margin-left": this.state.indentWidth}}>
-                            <div className="prj">
-                                <div className="prj-hdr f-size-lg">www.yevdev.io</div>
+                            <div className="prj anime-shift-from-right delay-animation-8">
+                                <div className="prj-hdr f-size-lg orng">yevdev.io</div>
                                 <p className="prj-txt">highlights include an admin page for uploading a new project and responsiveness. react express mysql nginx aws</p>
                                 <div className="prj-wnd">
                                     <div className="prj-bar">
@@ -31,9 +31,9 @@ class App extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="prj">
-                                <div className="prj-hdr f-size-lg">hangroulette.dev</div>
-                                <p className="prj-txt">highlights include a protected backend, multiplayer, responsiveness. react express websockets nginx aws</p>
+                            <div className="prj anime-shift-from-right delay-animation-8">
+                                <div className="prj-hdr f-size-lg orng">hangroulette.dev</div>
+                                <p className="prj-txt">highlights include a protected backend, multiplayer, and responsiveness. react express websockets nginx aws</p>
                                 <div className="prj-wnd">
                                     <div className="prj-bar">
                                     <span className="prj-circle bg-red"></span><span className="prj-circle bg-orange"></span><span className="prj-circle bg-green"></span>

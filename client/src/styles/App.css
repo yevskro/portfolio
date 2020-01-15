@@ -27,7 +27,7 @@
     background-color: RGB(39,43,46);
     margin-right: 10%;
     height: 14%;
-    font-size: 1.9em;
+    font-size: 1.8em;
     margin-top: 1%;
 }
 
@@ -72,13 +72,22 @@
     color: RGB(80, 251, 156);
 }
 
+.hdn {
+    opacity: 0;
+}
+
 @keyframes becomeVisible {
     0%      { opacity: 0; }
     100%    { opacity: 1; }
 }
 
-.hdn {
-    opacity: 0;
+@keyframes shiftFromRight {
+    0%      { margin-left: 100%;}
+    100%    { margin-left: 0; }
+}
+
+.anime-shift-from-right {
+    animation: 0.5s ease-in 0s 1 shiftFromRight forwards;
 }
 
 .anime-visible {
