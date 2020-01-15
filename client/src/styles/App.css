@@ -169,12 +169,12 @@
     height: 320px;
     width: 100%;
     box-sizing: border-box;
-    padding: 11% 5% 11% 5%;
+    padding: 9% 5% 9% 5%;
 }
 
 .prj-hdr {
     color: RGB(33,37,40);
-    margin-bottom: 4%;
+    margin-bottom: 3%;
 }
 
 .prj-txt {
@@ -182,7 +182,7 @@
     overflow-wrap: break-word;
     font-family: 'Source Code Pro', monospace;
     color: RGB(123,138,148);
-    margin-bottom: 4%;
+    margin-bottom: 3%;
 }
 
 .prj-wnd {
