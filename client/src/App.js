@@ -24,7 +24,7 @@ class App extends Component {
                         <div className="prjs-cntnr hdn anime-visible delay-animation-8" style={{"margin-left": this.state.indentWidth}}>
                             <div className="prj">
                                 <div className="prj-hdr f-size-lg">www.yevdev.io</div>
-                                <p className="prj-txt">fdsfkdsfksdjfsjdfsdjfksdjfksdjfksdjfsdjfkdsjkfkfjskdjf</p>
+                                <p className="prj-txt">highlights include an admin page for uploading a new project and responsiveness. react express mysql nginx aws</p>
                                 <div className="prj-wnd">
                                     <div className="prj-bar">
                                         <span className="prj-circle bg-red"></span><span className="prj-circle bg-orange"></span><span className="prj-circle bg-green"></span>
@@ -33,7 +33,7 @@ class App extends Component {
                             </div>
                             <div className="prj">
                                 <div className="prj-hdr f-size-lg">hangroulette.dev</div>
-                                <p className="prj-txt">fdsfkdsfksdjfsjdfsdjfksdjfksdjfksdjfsdjfkdsjkfkfjskdjf</p>
+                                <p className="prj-txt">highlights include a protected backend, multiplayer, responsiveness. react express websockets nginx aws</p>
                                 <div className="prj-wnd">
                                     <div className="prj-bar">
                                     <span className="prj-circle bg-red"></span><span className="prj-circle bg-orange"></span><span className="prj-circle bg-green"></span>
