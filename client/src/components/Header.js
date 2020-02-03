@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-const HeaderButton = (props) => <button className="hdr-btn flt-rgt orng hdn anime-visible delay-animation-10">{props.title}</button>
+const HeaderButton = (props) => <a href="mailto:yevskro@gmail.com?Subject=Hello Yevgeniy" target="_top"><button className="hdr-btn flt-rgt orng anime-visible delay-animation-10">{props.title}</button></a>
 const Highlight = (props)=> <span className="neon">&nbsp;{props.text}&nbsp;</span>
 const IntroContainer = (props) => {
-    const animateClasses = props.index > 0 ? `hdn anime-visible delay-animation-${props.content.props.delay - 1}` : ""
+    const animateClasses = props.index > 0 ? `anime-visible delay-animation-${props.content.props.delay - 1}` : ""
     return <div className={`intro-cntnr ${animateClasses}`} onAnimationStart={props.onAnimationStart}>{props.content}{props.children}</div>
 }
 const IntroMessage = (props) => {
-    return <span className={`intro-msg ${props.color} ${props.size} hdn anime-visible delay-animation-${props.delay}`}>{props.children}</span>
+    return <span className={`intro-msg ${props.color} ${props.size} anime-visible delay-animation-${props.delay}`}>{props.children}</span>
 }
 const generateIntroContainerFromMsgs = (contents, onAnimationStart) => {
     const generate = (index) => {
@@ -24,7 +24,7 @@ const generateIntroContainerFromMsgs = (contents, onAnimationStart) => {
 }
 
 const IntroList = (props) => <ul className="intro-lst">{props.children}</ul>
-const IntroItem = (props) => <li className={`intro-lst-itm ${props.color} hdn anime-visible delay-animation-${props.delay}`}>{props.text}</li>
+const IntroItem = (props) => <li className={`intro-lst-itm ${props.color} anime-visible delay-animation-${props.delay}`}>{props.text}</li>
 const onAnimationStart = (e, onGotResponsiveIndentWidth) => {
     e.stopPropagation()
     const className = e.target.className
