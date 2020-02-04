@@ -174,7 +174,7 @@
     margin-bottom: 3%;
 }
 
-.prj-txt {
+.prj-smry {
     font-family: 'Source Code Pro', monospace;
     color: RGB(123,138,148);
     margin-bottom: 3%;
@@ -191,13 +191,13 @@
     overflow: hidden;
 }
 
-.prj-bar {
+.wnd-bar {
     background-color: RGB(214,214,214);
     height: 20px;
     padding-left: 15px;
 }
 
-.prj-circle {
+.bar-circle {
     width: 5px;
     height: 5px;
     border-radius: 50%;

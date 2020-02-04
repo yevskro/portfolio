@@ -1,7 +1,8 @@
+import React from 'react'
 
 const Header = (props) => <div className="prj-hdr f-size-lg orng">{props.title}</div>
-const Summary = (props) => <p className="prj-txt">{props.text}</p>
-const Window = (props) => <div className="wnd">
+const Summary = (props) => <p className="prj-smry">{props.text}</p>
+const Window = (props) => <div className="prj-wnd">
                             <WindowBar/>
                             <WindowImage/>
                         </div>
@@ -17,7 +18,9 @@ const Project = (props) => {
     // props.header props.text props.image
     return <div className="prj anime-shift-from-right delay-animation-9">
                 <Header title={props.header}/>
-                <Summary text={props.text}/>
+                <Summary text={props.summary}/>
                 <Window image={props.image}/>
             </div>
 }
+
+export default Project

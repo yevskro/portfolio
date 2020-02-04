@@ -2,6 +2,7 @@ import React, { Component }     from 'react'
 import { Route } from 'react-router-dom'
 import Header    from './components/Header'
 import Footer    from './components/Footer'
+import Project   from './components/Project'
 
 import './styles/Reset.css'
 import './styles/App.css'
@@ -20,15 +21,11 @@ class App extends Component {
                     <Header onGotResponsiveIndentWidth={this.onGotResponsiveIndentWidth}/>
                     <div className="bdy">
                         <div className="prjs-cntnr anime-visible delay-animation-9" style={{"marginLeft": this.state.indentWidth}}>
-                            <div className="prj anime-shift-from-right delay-animation-9">
-                                <div className="prj-hdr f-size-lg orng">yevdev.io</div>
-                                <p className="prj-txt">highlights include a portfolio page, an admin page for uploading a new project, and responsiveness. react express postgresql nginx aws</p>
-                                <div className="prj-wnd">
-                                    <div className="prj-bar">
-                                        <span className="prj-circle bg-red"></span><span className="prj-circle bg-orange"></span><span className="prj-circle bg-green"></span>
-                                    </div>
-                                </div>
-                            </div>
+                            <Project header="yevdev.io" 
+                                     summary="highlights include a portfolio page, 
+                                     an admin page for uploading a new project, 
+                                     and responsiveness. react express postgresql 
+                                     nginx aws"/>
                             <div className="prj anime-shift-from-right delay-animation-10">
                                 <div className="prj-hdr f-size-lg orng">hangroulette.dev</div>
                                 <p className="prj-txt">highlights include a 2d game, protected backend, multiplayer, and responsiveness. react express websockets nginx aws</p>
