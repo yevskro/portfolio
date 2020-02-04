@@ -153,12 +153,7 @@
 }
 
 /********* BODY ************/
-.bdy {
-    width: 100%;
-}
-
-
-.prjs-cntnr {
+.cntnr {
     display: flex;
     flex-direction: column;
     border-left: 1px solid RGB(227, 231, 235);

@@ -6,7 +6,7 @@ const Window = (props) => <div className="prj-wnd">
                             <WindowBar/>
                             <WindowImage/>
                         </div>
-const WindowBar = (props) => <div className="wnd-bar">
+const WindowBar = () => <div className="wnd-bar">
                             <BarCircle color="bg-red"/>
                             <BarCircle color="bg-orange"/>
                             <BarCircle color="bg-green"/>
