@@ -1,30 +1,25 @@
 import React, { Component }     from 'react'
 import { Route } from 'react-router-dom'
 import Header    from './components/Header'
+import Footer    from './components/Footer'
 
 import './styles/Reset.css'
 import './styles/App.css'
 import './styles/Queries.css'
 
 class App extends Component {
-    /*constructor(props){
-        super(props)
-        this.state = {
-            indentWidth: 0
-        }
-    }*/
     state = { indentWidth: 0, widthOfPage: 0 }
 
     onGotResponsiveIndentWidth = (width) => {
         const e = document.getElementsByClassName("app")
-        this.setState({indentWidth: width, widthOfPage: e[0].offsetWidth})
+        this.setState({indentWidth: width})
     }
 
     render(){
         return <div className="app">
                     <Header onGotResponsiveIndentWidth={this.onGotResponsiveIndentWidth}/>
                     <div className="bdy">
-                        <div className="prjs-cntnr anime-visible delay-animation-9" style={{"margin-left": this.state.indentWidth}}>
+                        <div className="prjs-cntnr anime-visible delay-animation-9" style={{"marginLeft": this.state.indentWidth}}>
                             <div className="prj anime-shift-from-right delay-animation-9">
                                 <div className="prj-hdr f-size-lg orng">yevdev.io</div>
                                 <p className="prj-txt">highlights include a portfolio page, an admin page for uploading a new project, and responsiveness. react express postgresql nginx aws</p>
@@ -45,11 +40,7 @@ class App extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="ftr bg-drkgry">
-                        <div className="indent" style={{width: this.state.indentWidth}}/>
-                        <a className="ftr-btn" href="mailto:yevskro@gmail.com?Subject=Hello Yevgeniy">Hire Me</a>
-                        <span className="email gry">yevskro@gmail.com</span>
-                    </div>
+                    <Footer indentWidth={this.state.indentWidth}/>
                 </div>
     }
 }

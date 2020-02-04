@@ -11,6 +11,7 @@ const IntroMessage = (props) => {
 }
 const generateIntroContainerFromMsgs = (contents, onAnimationStart) => {
     const generate = (index) => {
+    /* recursive function */
         if(index === contents.length){
             return
         }
